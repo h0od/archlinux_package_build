@@ -8,6 +8,6 @@ RUN useradd -Um build \
     && usermod -aG wheel build \ 
     && sed -i '/%wheel ALL=(ALL) NOPASSWD: ALL/s/^#\s//g' /etc/sudoers
 
-#USER build
+USER build
 WORKDIR /home/build
 
