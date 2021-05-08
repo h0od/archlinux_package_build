@@ -1,13 +1,5 @@
 FROM buildenv
 
-# Install packages for build
-#RUN sudo pacman -Syyu --noconfirm \
-#    && sudo pacman -S --noconfirm --needed xproto
-
-# In order to run makepkg we need to be non-root
-#USER build
-#WORKDIR /home/build
-
 RUN mkdir /home/build/pkg
 COPY ./PKGBUILD /home/build/pkg
 WORKDIR /home/build/pkg

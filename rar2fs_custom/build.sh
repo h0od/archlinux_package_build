@@ -1,1 +1,1 @@
-../build.sh
+../build_package.sh
