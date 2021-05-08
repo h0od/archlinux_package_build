@@ -1,7 +1,8 @@
-FROM archlinux
+FROM archlinux:base-devel
 
-RUN pacman -Syyu --noconfirm \
-    && pacman -S --noconfirm --needed base-devel sudo git vim
+RUN pacman -Sy --noconfirm --needed base-devel sudo git vim bash-completion bash
+#RUN pacman -Syyu --noconfirm \
+#    && pacman -S --noconfirm --needed base-devel sudo git vim bash-completion bash
 
 # Add user and add to wheel. Make sure we can sudo without password
 RUN useradd -Um build \
