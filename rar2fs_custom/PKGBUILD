@@ -1,6 +1,6 @@
 pkgname=rar2fs
 pkgver=1.29.5
-_unrarver=6.0.5
+_unrarver=6.0.7
 pkgrel=1
 pkgdesc="Fuse file system for reading Rar archives"
 arch=("i686" "x86_64")
@@ -12,13 +12,13 @@ makedepends=("libunrar")
 source=("https://github.com/hasse69/rar2fs/releases/download/v$pkgver/rar2fs-$pkgver.tar.gz"
         "http://www.rarlab.com/rar/unrarsrc-$_unrarver.tar.gz")
 md5sums=('b2dca33f6a963ac860e4e4921a4d574e'
-         '925d522a76b53e6cbdb5d83caba9cb55')
+         'de5017a63a610cb82dba7d33bd826fb6')
 sha1sums=('9df539a72ad22b6333ffb9ff93f078069f86464a'
-          '354e1fd9d21a6d68529bdce6238c905bbfa13556')
+          '041a36ea448c73555ab94070add7dfaa0ef62bb0')
 sha256sums=('a56e9f2fd3d5037087b8405cff85ce7ffb74a904176f33f55b7bd15117cff2be'
-            '7e34064c9e97464462c81aed80c25619149f71d4900995021780787f51dd63f0')
+            'a7029942006cbcced3f3b7322ec197683f8e7be408972ca08099b196c038f518')
 sha512sums=('78962d614d66eeb09c013212d8bd373907d8a55489d9bc544f43ba1f34989cd777bba38a6af5899fea0b01e4cfdc0ee18462776e2d4cc529e05d5c6d30a899bf'
-            'cd6d9b316a2daf2f3f81b28b4d6054cbe7ca9a7e39087a5dc7e4c554e5d5590b395243f03f019bf358e127be48dd219e827fdb6af7543305a52c3f87f6e32dd7')
+            '2c50d1f58f5189e59dad36eb25aa50a34572f583242e624846c9791c5609e83d4ee76314d785771fe514ec3378749dcb86e4c97a8d2a3ab7b469df49a5c5f412')
 
 build() {
   cd "$srcdir/unrar"
